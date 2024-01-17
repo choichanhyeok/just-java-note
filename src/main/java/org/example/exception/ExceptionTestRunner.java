@@ -1,9 +1,9 @@
 package org.example.exception;
 
-import org.example.exception.checkedException.IOException.IOExceptionCase;
+import org.example.exception.checkedException.IOException.IOExceptionTestStarter;
 
 public class ExceptionTestRunner {
-    public static void main(String[] args) {
-        new IOExceptionCase();
+    public ExceptionTestRunner(){
+        new IOExceptionTestStarter();
     }
 }
