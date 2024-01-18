@@ -10,6 +10,11 @@ import java.io.IOException;
 
 public class IOExceptionCaseTest {
 
+    public IOExceptionCaseTest(){
+        this.test1();
+        this.test2();
+    }
+
     @DisplayName("IOException 발생 테스트 1")
     @Test
     protected void test1() {

@@ -8,6 +8,11 @@ import org.junit.jupiter.api.Test;
 public class NullPointExceptionTest {
     private Object emptyObject = null;
 
+
+    public NullPointExceptionTest(){
+        this.test1();
+    }
+
     @DisplayName("NullPointExceptionTest(1): null인 객체 참조 테스트")
     @Test
     protected void test1(){

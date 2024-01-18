@@ -6,6 +6,11 @@ import org.junit.jupiter.api.Test;
 
 public class ClassNotFoundExceptionTest {
 
+    public ClassNotFoundExceptionTest(){
+        this.test1();
+        this.test2();
+    }
+
     @DisplayName("잘못된 클래스 정보 호출")
     @Test
     protected void test1(){

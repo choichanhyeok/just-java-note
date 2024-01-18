@@ -6,6 +6,10 @@ import org.junit.jupiter.api.Test;
 
 public class ArithmeticExceptionTest {
 
+    public ArithmeticExceptionTest(){
+        this.test1();
+    }
+
     @DisplayName("ArithmeticExceptionTest(1): 0으로 나누는 경우")
     @Test
     protected void test1(){
