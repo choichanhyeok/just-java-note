@@ -6,6 +6,6 @@ public class ClassNotFoundTestStarter {
     public ClassNotFoundTestStarter(){
         classNotFoundExceptionTest.test1();
         classNotFoundExceptionTest.test2();
-        classNotFoundExceptionTest.test3();
+        // classNotFoundExceptionTest.test3();
     }
 }

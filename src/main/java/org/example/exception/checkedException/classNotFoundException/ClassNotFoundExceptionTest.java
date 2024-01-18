@@ -4,9 +4,6 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import java.io.ByteArrayInputStream;
-import java.io.ObjectInputStream;
-
 public class ClassNotFoundExceptionTest {
 
     @DisplayName("잘못된 클래스 정보 호출")
