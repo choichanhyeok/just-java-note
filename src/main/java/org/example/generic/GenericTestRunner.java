@@ -1,4 +1,4 @@
-﻿package org.example.generic;
+package org.example.generic;
 
 import org.example.generic.betterTypeSafety.TypeSafetyOnGenriceTest;
 

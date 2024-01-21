@@ -1,4 +1,4 @@
-﻿package org.example.generic.reduceCodeRedanduncy;
+package org.example.generic.reduceCodeRedanduncy;
 
 public class CoolRedundancyCodeApplyGeneric {
 
