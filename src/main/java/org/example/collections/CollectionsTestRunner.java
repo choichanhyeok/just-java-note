@@ -6,5 +6,6 @@ public class CollectionsTestRunner {
     public CollectionsTestRunner(){
         new ListTest();
         new VectorTest();
+        new ListTest();
     }
 }
