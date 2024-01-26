@@ -7,8 +7,8 @@ import org.junit.jupiter.api.Test;
 import java.util.concurrent.*;
 
 public class DeadLockSolveTest1 {
-    Object firstLock = new Object();
-    Object secondLock = new Object();
+    private Object firstLock = new Object();
+    private Object secondLock = new Object();
 
     @DisplayName("DeadLockSolveTest(1): 데드락 발생")
     @Test
@@ -58,7 +58,6 @@ public class DeadLockSolveTest1 {
     }
 
     private class Test1SecondThread extends Thread{
-
         public void run() {
             // TODO 1. second lock을 점유
             synchronized (secondLock) {
