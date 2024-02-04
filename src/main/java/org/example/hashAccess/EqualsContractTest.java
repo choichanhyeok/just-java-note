@@ -34,7 +34,7 @@ public class EqualsContractTest {
         @Override
         public boolean equals(Object o) {
             if (this == o) return true;
-            if (o == null || getClass() != o.getClass()) return false;
+            if (o == null || getClass() != o.getClass()) return false; // 엄격한 클래스 관리로 인해 대칭성 위반
 
             Money money = (Money) o;
 
