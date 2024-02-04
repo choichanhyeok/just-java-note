@@ -27,6 +27,7 @@ public class DeadLockSolveTest2 {
     }
 
     private void acquireLocksInOrder(Object lock1, Object lock2) { // 그냥 락 객체 받아서 정렬해서 순서 보장한다는 내용이네, -> 사용하는 락 요소가 같을때만 사용 가능할 듯 ..
+
         Object first = (System.identityHashCode(lock1) >= System.identityHashCode(lock2))? lock1: lock2;
         Object second = (System.identityHashCode(lock1) < System.identityHashCode(lock2))? lock2: lock1;
 

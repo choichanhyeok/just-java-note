@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.HashMap;
 
-public class implHashTest {
+public class ImplHashTest {
 
     @DisplayName("HashAbout: 그냥 해시 테이블 생성시 배열 실제로 적용되는 걸 옵션값으로 확인")
     @Test
