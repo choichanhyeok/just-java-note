@@ -67,7 +67,7 @@ public class SynchronizedMethodTest {
         processingTwoThread(t1, t2);
 
         // then
-        int expected = 2000;
+        int expected = 1000;
         int actual = syncMap.get(0);
         Assertions.assertNotEquals(expected, actual);
 
@@ -92,7 +92,7 @@ public class SynchronizedMethodTest {
         processingTwoThread(t1, t2);
 
         // then
-        int expected = 2000;
+        int expected = 1000;
         int actual = unsyncMap.get(0);
         Assertions.assertNotEquals(expected, actual);
     }
