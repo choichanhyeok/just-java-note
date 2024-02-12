@@ -16,6 +16,7 @@ public class BasicTestJDBC {
 
         try {
             Connection connection = DriverManager.getConnection(url, user, password);
+
             System.out.println("success connection Database!!");
 
             // TODO 1. 작업 진행
@@ -44,12 +45,13 @@ public class BasicTestJDBC {
         }
     }
 
-    @DisplayName("BasicTestJDBC(2): 데이터베이스")
+    @DisplayName("BasicTestJDBC(2): preparedStatement basic test")
     @Test
     public void test2(){
         String url = "jdbc:mysql://localhost:3306/test";
         String user = "root";
         String password = "Slqlrjf12#$";
+
 
         try{
             Connection connection = DriverManager.getConnection(url, user, password);
@@ -60,6 +62,7 @@ public class BasicTestJDBC {
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             preparedStatement.setString(1, "hyeok");
             ResultSet resultSet = preparedStatement.executeQuery();
+
 
             while(resultSet.next()){
                String data = resultSet.getString("name");
@@ -82,7 +85,7 @@ public class BasicTestJDBC {
     }
 
 
-    @DisplayName("BasicTestJDBC(3): ")
+    @DisplayName("BasicTestJDBC(3): statement basic test")
     @Test
     protected void test3(){
         String url = "jdbc:mysql://localhost:3306/test";
@@ -107,4 +110,33 @@ public class BasicTestJDBC {
             System.out.println("fail Database transaction");
         }
     }
+
+//    @DisplayName("BasicTestJDBC(4): SQL 인젝션 발생")
+//    @Test
+//    protected void test4(){
+//        String url = "jdbc:mysql://localhost:3306/test";
+//        String user = "root";
+//        String password = "1541";
+//        String userInput = "\'; SELECT * FROM student; \'";
+//        try{
+//            Connection connection = DriverManager.getConnection(url, user, password);
+//            String query = "SELECT * FROM student WHERE name = \'" + userInput + "\'";
+//
+//            Statement stmt = connection.createStatement();
+//            ResultSet rs = stmt.executeQuery(query);
+//
+//            while(rs.next()){
+//                System.out.println(rs.getString("name"));
+//            }
+//
+//            rs.close();
+//            stmt.close();
+//            connection.close();
+//        } catch (Exception e){
+//            e.printStackTrace();
+//            System.out.println("CONNECTION IS FAIL");
+//        }
+//
+//
+//    }
 }
