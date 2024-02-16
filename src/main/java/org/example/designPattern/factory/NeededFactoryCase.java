@@ -3,13 +3,11 @@ package org.example.designPattern.factory;
 import org.example.designPattern.factory.CarImpl.Benz;
 import org.example.designPattern.factory.CarImpl.Kia;
 import org.example.designPattern.factory.CarImpl.Tesla;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class NeededFactoryCase {
-    // private static final String userInput = "Tesla model Z";
 
     // TODO 1. 팩토리 사용에 필요한 문제 발생시켜보기
     @Test
