@@ -1,4 +1,4 @@
-package org.example.StringBasic;
+package org.example.stringBasic;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
