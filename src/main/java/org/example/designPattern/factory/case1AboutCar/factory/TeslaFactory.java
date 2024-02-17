@@ -1,8 +1,8 @@
-package org.example.designPattern.factory.factory;
+package org.example.designPattern.factory.case1AboutCar.factory;
 
-import org.example.designPattern.factory.Car;
-import org.example.designPattern.factory.CarException;
-import org.example.designPattern.factory.CarImpl.Tesla;
+import org.example.designPattern.factory.case1AboutCar.CarImpl.Car;
+import org.example.designPattern.factory.case1AboutCar.CarException;
+import org.example.designPattern.factory.case1AboutCar.CarImpl.Tesla;
 
 public class TeslaFactory extends CarFactory{
 

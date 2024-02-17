@@ -1,6 +1,4 @@
-package org.example.designPattern.factory.CarImpl;
-
-import org.example.designPattern.factory.Car;
+package org.example.designPattern.factory.case1AboutCar.CarImpl;
 
 public class Benz extends Car {
 

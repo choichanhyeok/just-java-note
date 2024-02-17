@@ -1,6 +1,6 @@
-package org.example.designPattern.factory.factory;
+package org.example.designPattern.factory.case1AboutCar.factory;
 
-import org.example.designPattern.factory.Car;
+import org.example.designPattern.factory.case1AboutCar.CarImpl.Car;
 
 public abstract class CarFactory {
 

@@ -1,9 +1,9 @@
-package org.example.designPattern.factory.realCase;
+package org.example.designPattern.factory.case1AboutCar.realCase;
 
-import org.example.designPattern.factory.Car;
-import org.example.designPattern.factory.factory.BenzFactory;
-import org.example.designPattern.factory.factory.KiaFactory;
-import org.example.designPattern.factory.factory.TeslaFactory;
+import org.example.designPattern.factory.case1AboutCar.CarImpl.Car;
+import org.example.designPattern.factory.case1AboutCar.factory.BenzFactory;
+import org.example.designPattern.factory.case1AboutCar.factory.KiaFactory;
+import org.example.designPattern.factory.case1AboutCar.factory.TeslaFactory;
 
 public class CarManager {
     protected static boolean isSameCarNumber(Car targetCar, Car compareCar){

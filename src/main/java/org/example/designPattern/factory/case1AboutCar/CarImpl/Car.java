@@ -1,4 +1,4 @@
-package org.example.designPattern.factory;
+package org.example.designPattern.factory.case1AboutCar.CarImpl;
 
 public abstract class Car {
     private static String name;

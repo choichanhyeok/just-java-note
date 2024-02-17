@@ -1,4 +1,4 @@
-package org.example.designPattern.factory;
+package org.example.designPattern.factory.case1AboutCar;
 
 public class CarException extends RuntimeException{
 

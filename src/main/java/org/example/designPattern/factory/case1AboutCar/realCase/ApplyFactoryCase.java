@@ -1,7 +1,7 @@
-package org.example.designPattern.factory.realCase;
+package org.example.designPattern.factory.case1AboutCar.realCase;
 
-import org.example.designPattern.factory.Car;
-import org.example.designPattern.factory.CarImpl.Tesla;
+import org.example.designPattern.factory.case1AboutCar.CarImpl.Car;
+import org.example.designPattern.factory.case1AboutCar.CarImpl.Tesla;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
