@@ -11,6 +11,12 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+
+/*
+ * [느낀점]
+ * 결국 팩토리 패턴이란 건 그룹화된 객체 생성이 필요할 때 적용하는거다.
+ * 이거 그냥 라이브러리 관점에서 지원하는거면 몰라도 사용하는 클라이언트 코드에서 직접 개발하면 복잡성 증가할 듯
+ * */
 public class ApplyingFactoryPatternTest {
 
     @BeforeEach
