@@ -1,8 +1,10 @@
-package org.example.designPattern.factory;
+package org.example.designPattern.factory.realCase;
 
+import org.example.designPattern.factory.Car;
 import org.example.designPattern.factory.CarImpl.Benz;
 import org.example.designPattern.factory.CarImpl.Kia;
 import org.example.designPattern.factory.CarImpl.Tesla;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -30,7 +32,7 @@ public class NeededFactoryCase {
 
         // then
         Car expectedCar = new Tesla(userInput, newCarNumber, "tesla");
-        assertTrue(CarManager.isSameCarNumber(actualCar, expectedCar));
+        Assertions.assertTrue(CarManager.isSameCarNumber(actualCar, expectedCar));
     }
 
     private class CarException extends RuntimeException{

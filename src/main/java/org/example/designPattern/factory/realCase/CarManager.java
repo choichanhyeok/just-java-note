@@ -1,5 +1,6 @@
-package org.example.designPattern.factory;
+package org.example.designPattern.factory.realCase;
 
+import org.example.designPattern.factory.Car;
 import org.example.designPattern.factory.factory.BenzFactory;
 import org.example.designPattern.factory.factory.KiaFactory;
 import org.example.designPattern.factory.factory.TeslaFactory;
