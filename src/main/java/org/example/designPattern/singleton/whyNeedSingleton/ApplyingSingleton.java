@@ -10,7 +10,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class ThisCaseNeedSingleton {
+public class ApplyingSingleton {
+    private final int testConnectionCount = 200;
 
     @Test
     public void DB_커넥션을_200개_쓰레드가_미친듯이_커넥션을_요구할_때() throws InterruptedException {
@@ -20,9 +21,9 @@ public class ThisCaseNeedSingleton {
 
 
         // when
-        for (int i = 0; i < 200; i ++){
+        for (int i = 0; i < testConnectionCount; i ++){
             threads.add(new Thread(() -> {
-                try { new DatabaseConnection(); }
+                try { DatabaseConnection.getInstance(); }
                 catch (SQLException e) { exceptions.add(e); }
 
                 try { Thread.sleep(100); }
@@ -39,25 +40,34 @@ public class ThisCaseNeedSingleton {
             thread.join();
         }
 
-        Assertions.assertTrue(!exceptions.isEmpty(), "DB 연결 중 예외 발생" + !exceptions.isEmpty());
+        Assertions.assertTrue(exceptions.isEmpty(), "요청이 미친듯이 많아도 DB 연결 중 예외 발생치 않음");
 
-//        for (Exception exception: exceptions) {
-//            System.out.println( exceptions.get(1).getMessage().toString() );
-//        }
+        // System.out.println("싱글톤 적용시 DB 커넥션 소요 시간("+ testConnectionCount +" 개 기준): ");
     }
 
 
-
-    public class DatabaseConnection {
+    public static class DatabaseConnection {
+        private static DatabaseConnection instance;
         private final Connection con;
 
-        public DatabaseConnection() throws SQLException {
+        private DatabaseConnection() throws SQLException {
             String url = "jdbc:mysql://localhost:3306/test";
             final String user = "root";
             final String password = "1541";
 
             this.con = DriverManager.getConnection(url, user, password);
             // System.out.println("DB Connection success: " + con);
+        }
+
+        public static DatabaseConnection getInstance() throws SQLException {
+            if (instance == null) {
+                synchronized (DatabaseConnection.class) {
+                    if (instance == null){
+                        instance = new DatabaseConnection();
+                    }
+                }
+            }
+            return instance;
         }
     }
 }
