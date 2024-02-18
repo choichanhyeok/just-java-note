@@ -12,7 +12,7 @@ public class BasicTestJDBC {
     protected void test1(){
         String url = "jdbc:mysql://localhost:3306/test";
         String user = "root";
-        String password = "Slqlrjf12#$";
+        String password = "1541";
 
         try {
             Connection connection = DriverManager.getConnection(url, user, password);

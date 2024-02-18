@@ -26,6 +26,7 @@ public class ApplyingFactoryPatternTest {
 
     @Test
     public void DAO_패턴에_Factory를_적용하지_않은_경우() {
+
         // given
         AppConfig appConfig = new AppConfig();
         String dbType = "oracle";
