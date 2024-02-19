@@ -8,12 +8,6 @@ import org.springframework.context.annotation.Configuration;
 public class AppConfig {
 
     @Bean
-    public TestClass testBean(){
-        return new TestClass();
-    }
-
-
-    @Bean
     public AcTestOrderService testOrderService() {
         return new AcTestOrderService();
     }
