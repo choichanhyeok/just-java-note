@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8" addBOMForNewFiles="with BOM under Windows, with no BOM otherwise">
     <file url="file://$PROJECT_DIR$/src/main/java/org/example/collections/CollectionsTestRunner.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/example/collections/collection/howToSynchronize/SynchronizedCollection/SynchronizedList.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/org/example/exception/checkedException/classNotFoundException/ClassNotFoundExceptionTest.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/org/example/generic/reduceCodeRedanduncy/BadRedundancyCodeNotApplyGeneric.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/example/springAop/AspectTestController.java" charset="x-windows-949" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/example/springAop/resource/AspectTestResource.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/org/example/threadSafety/deadLock/realCase/BankTransferCase1.java" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>

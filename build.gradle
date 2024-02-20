@@ -18,6 +18,12 @@ dependencies {
     testImplementation 'org.assertj:assertj-core:3.18.1'
     compileOnly 'javax.servlet:javax.servlet-api:4.0.1'
     implementation 'org.springframework:spring-context:5.3.15'
+
+    // 스프링 AOP 의존성 추가 -> AOP 테스트를 위해 추가
+    implementation 'org.springframework:spring-aop:5.3.15'
+
+    // AspectJ 의존성 추가
+    implementation 'org.aspectj:aspectjweaver:1.9.7' // AspectJ 버전은 프로젝트 요구사항에 맞게 조정하세요
 }
 
 test {
