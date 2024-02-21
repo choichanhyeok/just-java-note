@@ -23,7 +23,7 @@ public class RunAspectTest {
     }
 
     @Test
-    protected void 애플리케이션_컨텍스트_객체_생성시에_컴포넌트_스캔_컨피그_클래스_넘겨주면_스캔한다(){
+    public void 애플리케이션_컨텍스트_객체_생성시에_컴포넌트_스캔_컨피그_클래스_넘겨주면_스캔한다_근데_AOP는_적용이_안돼(){ // -> Configure에 EnableAspectJ를 안해줘서
         // given
         ApplicationContext ac = new AnnotationConfigApplicationContext(ComponentScanConfig.class);
 

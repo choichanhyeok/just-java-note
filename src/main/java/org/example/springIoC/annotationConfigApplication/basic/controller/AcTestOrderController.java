@@ -49,7 +49,6 @@ public class AcTestOrderController {
         Assertions.assertThrows(NullPointerException.class, () -> {
             acTestOrderServiceWithAutowired.findAllOrder().getName();
         });
-
     }
 
 }
