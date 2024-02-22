@@ -3,6 +3,10 @@
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8" addBOMForNewFiles="with BOM under Windows, with no BOM otherwise">
     <file url="file://$PROJECT_DIR$/src/main/java/org/example/collections/CollectionsTestRunner.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/org/example/collections/collection/howToSynchronize/SynchronizedCollection/SynchronizedList.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/example/designPattern/factory/normalFactory/NoApplyingFactoryPatternTest.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/example/designPattern/factory/normalFactory/factory/SimpleFactory.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/example/designPattern/factory/normalFactory/object/Iphone.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/example/designPattern/factory/normalFactory/object/Phone.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/org/example/exception/checkedException/classNotFoundException/ClassNotFoundExceptionTest.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/org/example/generic/reduceCodeRedanduncy/BadRedundancyCodeNotApplyGeneric.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/org/example/springAop/AspectTestController.java" charset="x-windows-949" />
