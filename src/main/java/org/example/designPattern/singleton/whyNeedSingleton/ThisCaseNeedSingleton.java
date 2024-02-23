@@ -13,19 +13,19 @@ import java.util.List;
 public class ThisCaseNeedSingleton {
 
     @Test
-    public void DB_커넥션을_200개_쓰레드가_미친듯이_커넥션을_요구할_때() throws InterruptedException {
+    public void DB_커넥션을_200개_쓰레드가_커넥션을_요구할_때() throws InterruptedException {
         // given
         final List<Thread> threads = new ArrayList<>();
         final List<Exception> exceptions = Collections.synchronizedList(new ArrayList<>());
 
 
         // when
-        for (int i = 0; i < 200; i ++){
+        for (int i = 0; i < 500; i ++){
             threads.add(new Thread(() -> {
                 try { new DatabaseConnection(); }
                 catch (SQLException e) { exceptions.add(e); }
 
-                try { Thread.sleep(100); }
+                try { Thread.sleep(1000); }
                 catch (InterruptedException e) { System.out.println("InterruptedException !!"); }
             }));
         }

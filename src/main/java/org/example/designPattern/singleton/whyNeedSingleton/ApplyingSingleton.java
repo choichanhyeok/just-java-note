@@ -14,7 +14,7 @@ public class ApplyingSingleton {
     private final int testConnectionCount = 200;
 
     @Test
-    public void DB_커넥션을_200개_쓰레드가_미친듯이_커넥션을_요구할_때() throws InterruptedException {
+    public void DB_커넥션을_200개_쓰레드가_커넥션을_요구할_때() throws InterruptedException {
         // given
         final List<Thread> threads = new ArrayList<>();
         final List<Exception> exceptions = Collections.synchronizedList(new ArrayList<>());

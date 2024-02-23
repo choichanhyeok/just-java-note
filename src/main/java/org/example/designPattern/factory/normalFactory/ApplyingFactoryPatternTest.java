@@ -6,6 +6,15 @@ import org.example.designPattern.factory.normalFactory.factory.SimpleFactory;
 import org.example.designPattern.factory.normalFactory.object.Phone;
 import org.junit.jupiter.api.Test;
 
+
+
+
+
+
+
+
+
+
 public class ApplyingFactoryPatternTest {
 
     @Test

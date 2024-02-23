@@ -4,6 +4,8 @@ import org.example.designPattern.factory.normalFactory.object.Iphone;
 import org.example.designPattern.factory.normalFactory.object.SamsungPhone;
 import org.junit.jupiter.api.Test;
 
+
+
 public class NoApplyingFactoryPatternTest {
 
     @Test
@@ -12,6 +14,7 @@ public class NoApplyingFactoryPatternTest {
         // when
         String[] inputTypes = new String[testSize];
         String[] outputNames = new String[testSize];
+
 
         for (int i = 0; i < testSize; i ++) {
             if (inputTypes[i] == "IPHONE") {
