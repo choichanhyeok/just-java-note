@@ -17,6 +17,7 @@ public class AppConfig {
      * 그런게 아니라면 이렇게 하나하나 손으로 등록 해줘야함, 컴포넌트 스캔 없으면 사실 그냥 겁나 불편한 건데
      *
      * 이렇게 등록한 bean은 AnnotationConfigApplicationContext를 써서 getBean 하지 않아도 autowired로 가져올 수 있나?
+     * 응. 해당 Configuration이 컴포넌트 스캔 적용된 클래스고 해당 컨피규레이션이 ApplicationContext나 BeanFactory 생성시 넘어갔으면 가능하다.
      */
 
 }
