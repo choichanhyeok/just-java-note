@@ -24,6 +24,9 @@ dependencies {
 
     // AspectJ 의존성 추가
     implementation 'org.aspectj:aspectjweaver:1.9.7' // AspectJ 버전은 프로젝트 요구사항에 맞게 조정하세요
+
+    // 하이버네이트 추가
+    implementation 'org.hibernate:hibernate-entitymanager:5.4.30.Final' // 근데 이제 .. JPA 테스트를 위한
 }
 
 test {
