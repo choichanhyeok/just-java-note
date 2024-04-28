@@ -7,6 +7,7 @@ import java.util.StringTokenizer;
 
 /*
  DFS exercise: https://www.acmicpc.net/problem/2606 문제 풀이
+ 타입1: 특정 노드와 연결된 노드의 개수 찾는 문제
  */
 public class basicDFS {
     private boolean[][] graph;
